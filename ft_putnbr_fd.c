@@ -6,7 +6,7 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 15:14:20 by mawako            #+#    #+#             */
-/*   Updated: 2024/09/07 14:06:40 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 17:54:59 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	*s;
-	int	len;
+	int		len;
 
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return;
+		return ;
 	}
 	s = ft_itoa(n);
 	len = ft_strlen(s);
 	write (fd, s, len);
-	return;
+	return ;
 }

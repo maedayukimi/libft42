@@ -6,7 +6,7 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:06:04 by mawako            #+#    #+#             */
-/*   Updated: 2024/09/08 17:12:03 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 17:42:22 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ char	*ft_itoa(int n)
 {
 	char		*s;
 	long int	len;
-	int		num;
-	int		sign;
+	size_t		num;
+	int			sign;
 
 	sign = 1;
 	len = ft_len(n);

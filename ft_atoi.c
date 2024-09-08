@@ -6,7 +6,7 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 15:24:12 by mawako            #+#    #+#             */
-/*   Updated: 2024/09/08 13:29:05 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 17:55:20 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_long(long num, int c)
 int	ft_atoi(const char *n)
 {
 	long	res;
-	int	sign;
+	int		sign;
 
 	res = 0;
 	sign = 1;

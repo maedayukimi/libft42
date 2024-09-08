@@ -6,7 +6,7 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 17:36:23 by mawako            #+#    #+#             */
-/*   Updated: 2024/06/01 18:45:29 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 17:51:10 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*mem;
+
 	if (nmemb && size > SIZE_MAX / nmemb)
 		return (NULL);
 	mem = malloc(nmemb * size);

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/08 17:06:44 by mawako            #+#    #+#             */
-/*   Updated: 2024/09/08 17:10:53 by mawako           ###   ########.fr       */
+/*   Created: 2024/09/08 17:49:30 by mawako            #+#    #+#             */
+/*   Updated: 2024/09/08 17:49:53 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@
 
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
-}			t_list;
-
+}					t_list;
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
