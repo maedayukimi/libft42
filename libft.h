@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/08 17:06:44 by mawako            #+#    #+#             */
+/*   Updated: 2024/09/08 17:10:53 by mawako           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
@@ -5,6 +17,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdint.h>
+
 typedef struct s_list
 {
 	void		*content;

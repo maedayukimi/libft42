@@ -6,13 +6,13 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 15:57:23 by mawako            #+#    #+#             */
-/*   Updated: 2024/08/26 16:13:30 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 16:43:35 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	i;
 	size_t	slen;

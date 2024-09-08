@@ -6,29 +6,43 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 15:48:17 by mawako            #+#    #+#             */
-/*   Updated: 2024/08/26 12:21:46 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 16:24:10 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	*ft_strncat(char *dst, const char *src, size_t len)
+{
+	char	*copy;
+
+	copy = dst;
+	while (*dst)
+		dst++;
+	while (0 < len && *src)
+	{
+		*dst = *src;
+		dst++;
+		src++;
+		len--;
+	}
+	*dst = 0;
+	return (copy);
+}
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	j;
+	size_t	max;
+	size_t	d_len;
+	size_t	s_len;
 
-	if (!dst && size == 0)
+	if (size == 0 && !dst)
 		return (ft_strlen(src));
-	if (size <= ft_strlen(dst))
-		return (size + ft_strlen(src));
-	i = 0;
-	j = (ft_strlen(dst));
-	while (size > j + 1 && src[i])
-	{
-		dst[j] = src[i];
-		i++;
-		j++;
-	}
-	dst[j] = ('\0');
-	return (ft_strlen(src));
+	d_len = ft_strlen(dst);
+	s_len = ft_strlen(src);
+	if (size <= d_len)
+		return (size + s_len);
+	max = size - d_len - 1;
+	ft_strncat(dst, src, max);
+	return (s_len + d_len);
 }

@@ -6,7 +6,7 @@
 /*   By: mawako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 07:35:09 by mawako            #+#    #+#             */
-/*   Updated: 2024/08/27 16:28:39 by mawako           ###   ########.fr       */
+/*   Updated: 2024/09/08 16:42:53 by mawako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ static int	ft_set(char c, char const *set)
 	}
 	return (0);
 }
-char		*ft_strtrim(char const *s1, char const *set)
+
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t start;
+	size_t	start;
 	size_t	end;
+	char	*s;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -35,7 +37,6 @@ char		*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (end > start && ft_set(s1[end - 1], set))
 		end--;
-	char	*s; 
 	s = (char *)malloc((end - start + 1) * sizeof(char));
 	if (!s)
 		return (NULL);
